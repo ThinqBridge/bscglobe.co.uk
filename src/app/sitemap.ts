@@ -6,6 +6,7 @@ const siteUrl = "https://bscglobe.co.uk";
 const routes = [
   "",
   "/about",
+  "/academic-profiles",
   "/admissions",
   "/contact",
   "/programmes",

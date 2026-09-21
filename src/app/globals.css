@@ -1375,6 +1375,89 @@ em {
   @apply text-ui;
   color: var(--muted);
 }
+.academic-section {
+  background: #f7f5f0;
+}
+.academic-heading {
+  align-items: end;
+}
+.academic-heading .section-description {
+  margin-bottom: 5px;
+}
+.academic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 58px;
+}
+.academic-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 30px 32px 32px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+}
+.academic-portrait {
+  position: relative;
+  aspect-ratio: 1;
+  margin: -30px -32px 28px;
+  overflow: hidden;
+  background: #edf0ee;
+}
+.academic-portrait img {
+  object-fit: cover;
+  object-position: center 25%;
+}
+.academic-card header {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+.academic-card h3 {
+  font-size: 27px;
+}
+.academic-qualifications {
+  margin-top: 7px;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.academic-bio {
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.academic-specialisms {
+  margin-top: auto;
+  padding-top: 25px;
+}
+.academic-label {
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.academic-specialisms ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 8px;
+  padding: 0;
+  margin: 13px 0 0;
+  list-style: none;
+}
+.academic-specialisms li {
+  padding: 5px 9px;
+  color: var(--navy);
+  background: #edf0ee;
+  border-radius: 3px;
+  font-size: 11px;
+  line-height: 1.4;
+}
 .admissions-steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1776,6 +1859,9 @@ em {
   .values-grid {
     grid-template-columns: 1fr 1fr;
     gap: 35px;
+  }
+  .academic-grid {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 760px) {
@@ -2255,6 +2341,15 @@ em {
   }
   .values-grid {
     grid-template-columns: 1fr;
+  }
+  .academic-heading {
+    display: block;
+  }
+  .academic-heading .section-description {
+    margin-top: 25px;
+  }
+  .academic-grid {
+    margin-top: 40px;
   }
   .value-card h3 {
     margin-top: 15px;

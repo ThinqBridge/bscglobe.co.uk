@@ -10,6 +10,7 @@ import { Icon } from "./icons";
 const links = [
   { href: "/programmes", label: "Our programmes" },
   { href: "/about", label: "Why BSC Globe" },
+  { href: "/academic-profiles", label: "Academic profiles" },
   { href: "/programmes/qs-undergraduate-pathway", label: "Your pathway" },
   { href: "/admissions", label: "Admissions" },
 ];
