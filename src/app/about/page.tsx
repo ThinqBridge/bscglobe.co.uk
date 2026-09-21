@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Why BSC Globe",
   description:
     "Discover our British educational heritage and international approach to business education, practical learning and academic progression.",
+  alternates: { canonical: "/about" },
 };
 const values = [
   [

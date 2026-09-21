@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: "Your undergraduate business pathway",
   description:
     "Explore the Qualifications Scotland pathway from foundation to HND and BA (Hons) Business Management Top-Up with the University of Suffolk.",
+  alternates: { canonical: "/programmes/qs-undergraduate-pathway" },
 };
 export default function PathwayPage() {
   return (

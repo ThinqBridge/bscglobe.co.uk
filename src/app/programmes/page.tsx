@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Explore our programmes",
   description:
     "Find your route in business, undergraduate and postgraduate study, English language and professional development at BSC Globe Education UK.",
+  alternates: { canonical: "/programmes" },
 };
 export default function ProgrammesPage() {
   return (

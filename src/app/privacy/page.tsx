@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { PageIntro, PageLayout } from "../../components/site-chrome";
 
-export const metadata: Metadata = { title: "Privacy notice" };
+export const metadata: Metadata = {
+  title: "Privacy notice",
+  alternates: { canonical: "/privacy" },
+};
 
 export default function PrivacyPage() {
   return (

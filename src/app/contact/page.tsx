@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Talk to Admissions",
   description:
     "Contact BSC Globe Education UK to discuss programmes, entry requirements and your next step in education.",
+  alternates: { canonical: "/contact" },
 };
 export default async function ContactPage({
   searchParams,

@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: "Admissions & entry guidance",
   description:
     "Plan your next step with BSC Globe Education UK. Explore programme options, prepare your qualifications and speak to our Admissions team.",
+  alternates: { canonical: "/admissions" },
 };
 export default function AdmissionsPage() {
   return (

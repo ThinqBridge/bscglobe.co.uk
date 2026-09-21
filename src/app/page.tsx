@@ -1,9 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { EnquiryBanner, PageLayout } from "../components/site-chrome";
 import { Icon } from "../components/icons";
 import { ProgrammeFinder } from "../components/programme-finder";
 import { FAQ } from "../components/faq";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   return (

@@ -22,6 +22,9 @@ export async function generateMetadata({
   return {
     title: programme?.title ?? "Programme not found",
     description: programme?.description,
+    alternates: {
+      canonical: programme ? `/programmes/${programme.slug}` : "/programmes",
+    },
   };
 }
 export default async function ProgrammePage({
