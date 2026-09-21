@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BSC Globe Education UK
+
+Marketing website for BSC Globe Education UK. It presents British education pathways, programme details, admissions information, and an enquiry workflow.
+
+Built with Next.js 16, React 19, TypeScript, and Tailwind CSS 4.
+
+## Requirements
+
+- Node.js 20.9 or later
+- npm
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and start the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`npm run dev` clears port 3000 before starting Next.js. To use a different port, run Next directly:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npx next dev -p 3001
+```
 
-## Learn More
+## Commands
 
-To learn more about Next.js, take a look at the following resources:
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the local development server. |
+| `npm run lint` | Run ESLint. |
+| `npm run build` | Create and validate the production build. |
+| `npm run start` | Serve the production build after `npm run build`. |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+src/
+	app/                 Routes, metadata, and global Tailwind styles
+	components/          Shared navigation, footer, forms, FAQ, and programme UI
+	lib/                 Programme content and programme image mappings
+public/images/         Optimized site images
+contents/              Source content and brand guidance
+```
 
-## Deploy on Vercel
+Key routes include:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `/` - Home
+- `/programmes` - Programme directory
+- `/programmes/[slug]` - Individual programme pages
+- `/programmes/qs-undergraduate-pathway` - Undergraduate pathway overview
+- `/about`, `/admissions`, and `/contact` - Core information and enquiry pages
+- `/privacy` and `/terms` - Legal pages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Content and Images
+
+- Programme copy, entry requirements, and progression details are maintained in [src/lib/programmes.ts](src/lib/programmes.ts).
+- Programme-card image mappings are maintained in [src/lib/programme-images.ts](src/lib/programme-images.ts).
+- Shared page chrome is in [src/components/site-chrome.tsx](src/components/site-chrome.tsx), and navigation is in [src/components/navigation.tsx](src/components/navigation.tsx).
+- Tailwind CSS 4 is imported and themed in [src/app/globals.css](src/app/globals.css). Reuse its existing Tailwind tokens and utilities when adjusting the interface.
+
+Run `npm run lint` and `npm run build` before opening a pull request or deploying changes.
+
+## Deployment
+
+Create a production build:
+
+```bash
+npm run build
+npm run start
+```
+
+The project can be deployed to any platform that supports Next.js, including Vercel. Set the production domain and any deployment-specific configuration in the hosting platform.
