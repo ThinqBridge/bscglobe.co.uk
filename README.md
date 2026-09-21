@@ -28,11 +28,11 @@ npx next dev -p 3001
 
 ## Commands
 
-| Command | Purpose |
-| --- | --- |
-| `npm run dev` | Start the local development server. |
-| `npm run lint` | Run ESLint. |
-| `npm run build` | Create and validate the production build. |
+| Command         | Purpose                                           |
+| --------------- | ------------------------------------------------- |
+| `npm run dev`   | Start the local development server.               |
+| `npm run lint`  | Run ESLint.                                       |
+| `npm run build` | Create and validate the production build.         |
 | `npm run start` | Serve the production build after `npm run build`. |
 
 ## Project Structure
